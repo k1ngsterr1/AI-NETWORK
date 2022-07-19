@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+// Variables
+$text: #ffffff
+$mainBlue: #00CFFD
+$blueForText: #24CFFF
+
+// fonts
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-image: url(../images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
+    font-family: 'Roboto Condensed', sans-serif
+    .app
+        width: 71.40625%
+        height: 100vh
+        margin: auto
+
+    .navigation
+        width: 100%
+        height: 35px
+        color: $text
+        display: flex
+        justify-content: space-between
+        font-size: clamp(20px,1.5625vw, 45px)
+        margin-top: clamp(40px,3.125vw,80px)
+        user-select: none
+
+        a
+            cursor: pointer
+
+        .home
+            text-decoration: underline
+
+    .main
+        width: 112.03501094091904%
+        height: 716px
+        border: 2px solid white
+        margin-top: clamp(59px,4.635416666666667vw, 90px)
+
+@media screen and (max-width:1024px)
+    .main

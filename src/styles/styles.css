@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
+  font-family: "Roboto Condensed", sans-serif;
+}
+body .app {
+  width: 71.40625%;
+  height: 100vh;
+  margin: auto;
+}
+body .navigation {
+  width: 100%;
+  height: 35px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(20px, 1.5625vw, 45px);
+  margin-top: clamp(40px, 3.125vw, 80px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body .navigation a {
+  cursor: pointer;
+}
+body .navigation .home {
+  text-decoration: underline;
+}
+body .main {
+  width: 112.0350109409%;
+  height: 716px;
+  border: 2px solid white;
+  margin-top: clamp(59px, 4.6354166667vw, 90px);
+}/*# sourceMappingURL=styles.css.map */

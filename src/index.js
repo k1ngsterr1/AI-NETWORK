@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+// Styles and Fonts
+import "./styles/styles.css";
+// Fonts
+import "./fonts/roboto-condensed/RobotoCondensed-Bold.ttf";
+import "./fonts/roboto-condensed/RobotoCondensed-BoldItalic.ttf";
+import "./fonts/roboto-condensed/RobotoCondensed-Italic.ttf";
+import "./fonts/roboto-condensed/RobotoCondensed-Light.ttf";
+import "./fonts/roboto-condensed/RobotoCondensed-LightItalic.ttf";
+import "./fonts/roboto-condensed/RobotoCondensed-Regular.ttf";
+// Components
+import App from "./App";
+import NavBar from "./components/NavBar";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
