@@ -12,5 +12,73 @@
   margin: auto;
   margin-top: 100;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-project-header {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 50px;
+  line-height: 59px;
+  color: #ffffff;
+  margin-top: clamp(50px, 5.2083333333vw, 300px);
+  text-transform: uppercase;
+}
+
+.separator {
+  width: clamp(200px, 26.7708333333vw, 600px);
+  height: 2px;
+}
+
+.glass-div {
+  width: clamp(300px, 45.5208333333vw, 974px);
+  height: 412px;
+  background: rgba(217, 217, 217, 0.06);
+  box-shadow: 0px 12px 65px rgba(0, 0, 0, 0.25), inset 8.57333px -8.57333px 8.57333px rgba(182, 182, 182, 0.32), inset -8.57333px 8.57333px 8.57333px rgba(255, 255, 255, 0.32);
+  -webkit-backdrop-filter: blur(37.7227px);
+          backdrop-filter: blur(37.7227px);
+  margin-top: clamp(14px, 1.7708333333vw, 54px);
+  display: flex;
   justify-content: center;
+}
+
+.about-us-paragraph {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: clamp(26px, 2.5vw, 66px);
+  width: clamp(622px, 38.9583333333vw, 874px);
+  font-size: clamp(20px, 2.34375vw, 65px);
+  line-height: clamp(33px, 2.7604166667vw, 73px);
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.blue-txt {
+  color: #24CFFF;
+  text-decoration: underline;
+  transition: 0.2s all;
+}
+.blue-txt:hover {
+  color: #008bfd;
+}
+
+.read-more {
+  width: clamp(202px, 21.7708333333vw, 505px);
+  height: clamp(40px, 3.8020833333vw, 80px);
+  background-color: transparent;
+  margin-top: clamp(35px, 2.8645833333vw, 75px);
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  border: 2px solid white;
+  color: #ffffff;
+  font-size: clamp(25px, 2.34375vw, 65px);
 }/*# sourceMappingURL=about-styles.css.map */
