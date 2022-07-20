@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
@@ -8,9 +10,12 @@ const NavBar = () => {
       <a className="about-creator">ABOUT CREATOR</a>
       <a className="faq">FAQ</a>
       <a className="support">SUPPORT</a>
-      <a className="user">
-        <ion-icon name="person-circle-outline"></ion-icon>Ruslan Makhmatov
-      </a>
+      <div className="user-container">
+        <a className="user">
+          <FontAwesomeIcon className="user-icon" icon={faUser} />
+          Ruslan Makhmatov
+        </a>
+      </div>
     </nav>
   );
 };

@@ -43,6 +43,16 @@ body .home {
 body .home:hover, body .about-project:hover, body .about-creator:hover, body .faq:hover, body .support:hover {
   text-decoration: underline;
 }
+body .user-container {
+  display: flex;
+  align-items: center;
+}
+body .user-icon {
+  font-size: clamp(7px, 1.40625vw, 37px);
+  width: clamp(17px, 1.40625vw, 37px);
+  height: clamp(17px, 1.40625vw, 37px);
+  margin-right: clamp(7px, 1.09375vw, 31px);
+}
 body .main {
   width: clamp(480px, 78.4405543399%, 1200px);
   height: 716px;
