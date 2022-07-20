@@ -14,11 +14,11 @@ $userHover: #7ce0ff
     box-sizing: border-box
 
 body
-    background-image: url(../images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
+    background-image: url(/src/images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
     background-repeat: no-repeat
-    background-size: cover
-    background-position: center center
+    height: 200vh
     font-family: 'Roboto Condensed', sans-serif
+
     .app
         width: 71.40625%
         height: 100vh
@@ -262,5 +262,9 @@ body
         -webkit-transform: scale3d(1, 1, 1)
         transform: scale3d(1, 1, 1)
 
-@media screen and (max-width:1024px)
-    .main
+@media screen and (max-width:1273px)
+    body
+        background-image: url(/src/images/BG1024PX.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
+        background-repeat: no-repeat
+        height: 200vh
+        font-family: 'Roboto Condensed', sans-serif

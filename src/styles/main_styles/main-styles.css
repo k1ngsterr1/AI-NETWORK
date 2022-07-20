@@ -6,10 +6,9 @@
 }
 
 body {
-  background-image: url(../images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
+  background-image: url(/src/images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  height: 200vh;
   font-family: "Roboto Condensed", sans-serif;
 }
 body .app {
@@ -277,4 +276,12 @@ body .square {
   100% {
     transform: scale3d(1, 1, 1);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+@media screen and (max-width: 1273px) {
+  body {
+    background-image: url(/src/images/BG1024PX.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    height: 200vh;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+}/*# sourceMappingURL=main-styles.css.map */
