@@ -16,6 +16,8 @@ $blueForText: #24CFFF
 body
     background-image: url(../images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
     background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
     font-family: 'Roboto Condensed', sans-serif
     .app
         width: 71.40625%
@@ -24,6 +26,9 @@ body
 
     .navigation
         width: 100%
+        font-family: 'Roboto Condensed'
+        font-style: normal
+        font-weight: 400
         height: 35px
         color: $text
         display: flex
@@ -33,20 +38,21 @@ body
         margin-top: clamp(40px,3.125vw,80px)
         user-select: none
 
-        a
-            cursor: pointer
+    a
+        cursor: pointer
+    .home
+        text-decoration: underline
 
-        .home
+    .home, .about-project, .about-creator, .faq, .support
+        &:hover
             text-decoration: underline
 
-        .home, .about-project, .about-creator, .faq, .support
-            &:hover
-                text-decoration: underline
+    .user
 
     .main
         width: clamp(480px,78.44055433989789%,1200px)
         height: 716px
-        margin-top: clamp(10px,4.635416666666667vw, 90px)
+        margin-top: clamp(10px,3.635416666666667vw, 90px)
 
     .square
         width: 8.177083333333334vw
@@ -68,6 +74,9 @@ body
     font-weight: 600
 
 .header-text
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 500
     margin-left: clamp(21px,1.6145833333333333vw,41px)
     font-size: clamp(19px,4.166666666666667vw,100px)
     color: $text
@@ -113,6 +122,7 @@ body
     width: clamp(20px,2.0833333333333335vw,50px)
     height: clamp(20px,2.0833333333333335vw, 50px)
     user-select: none
+    pointer-events: none
 
 .quote-author
     width: clamp(160px,18.822916666666666vw, 460px)
@@ -128,28 +138,48 @@ body
 
 .start-btn
     width: clamp(202px,21.041666666666668vw, 505px)
-    height: 65.49px
+    height: clamp(40px,3.4109374999999997vw, 80px)
     background-color: $mainBlue
     box-shadow: 0px 4px 31px 5px rgba(0, 207, 253, 0.9)
     outline: none
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 400
     color: $text
     font-weight: 400
-    font-size: clamp(40px,2.3041666666666665vw,70px)
+    font-size: clamp(30px,2.3041666666666665vw,70px)
     border: none
     transition: 0.3s all
-    &:hover
 
+    &:hover
         background-color: $btnHover
         box-shadow: 0px 4px 31px 5px rgb(0, 118, 253, 0.9)
 
 .sign-up
     width: clamp(202px,21.041666666666668vw, 505px)
-    height: 65.49px
+    height: clamp(40px,3.4109374999999997vw, 80px)
     background-color: transparent
+    font-family: 'Roboto Condensed'
+    font-style: normal
+    font-weight: 400
     border: 2px solid white
     font-weight: 400
-    font-size: clamp(40px,2.3041666666666665vw,70px)
+    font-size: clamp(30px,2.3041666666666665vw,70px)
+    margin-left: clamp(30px,2.6041666666666665vw,70px)
     color: $text
+    transition: 0.3s all
+    &:hover
+        border: none
+        background-color: $mainBlue
+        box-shadow: 0px 4px 31px 5px rgba(0, 207, 253, 0.9)
 
+.brain-picture
+    position: absolute
+    width: clamp(380px,34.895833333333336vw, 780px)
+    height: clamp(370px,34.595833333333336vw, 770px)
+    left: 59.427083333333336vw
+    top: clamp(220px,11.979166666666666vw,300px)
+    user-select: none
+    pointer-events: none
 @media screen and (max-width:1024px)
     .main

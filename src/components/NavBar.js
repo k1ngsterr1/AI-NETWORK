@@ -8,7 +8,9 @@ const NavBar = () => {
       <a className="about-creator">ABOUT CREATOR</a>
       <a className="faq">FAQ</a>
       <a className="support">SUPPORT</a>
-      <a className="">Ruslan Makhmatov</a>
+      <a className="user">
+        <ion-icon name="person-circle-outline"></ion-icon>Ruslan Makhmatov
+      </a>
     </nav>
   );
 };

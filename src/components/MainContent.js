@@ -1,5 +1,6 @@
 import React from "react";
 import ClaudeShannon from "../images/Claude.Shannon.png";
+import Brain from "../images/Brain.png";
 
 const MainContent = () => {
   return (
@@ -37,6 +38,7 @@ const MainContent = () => {
         <button className="start-btn">START</button>
         <button className="sign-up">SIGN UP</button>
       </div>
+      <img className="brain-picture" src={Brain}></img>
     </main>
   );
 };
