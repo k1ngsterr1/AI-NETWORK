@@ -47,6 +47,13 @@ body .user-container {
   display: flex;
   align-items: center;
 }
+body .user {
+  transition: 0.3s all;
+}
+body .user:hover {
+  text-decoration: underline;
+  color: #7ce0ff;
+}
 body .user-icon {
   font-size: clamp(7px, 1.40625vw, 37px);
   width: clamp(17px, 1.40625vw, 37px);
@@ -55,7 +62,7 @@ body .user-icon {
 }
 body .main {
   width: clamp(480px, 78.4405543399%, 1200px);
-  height: 716px;
+  height: clamp(480px, 37.2916666667vw, 817px);
   margin-top: clamp(10px, 3.6354166667vw, 90px);
 }
 body .square {
@@ -209,4 +216,65 @@ body .square {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+}
+
+.main-header, .offer-p, .separator, .quote-container, .buttons, .navigation {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.brain-picture {
+  -webkit-animation: pulse 6s infinite;
+          animation: pulse 6s infinite;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }/*# sourceMappingURL=styles.css.map */

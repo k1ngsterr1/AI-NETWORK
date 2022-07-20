@@ -1,6 +1,7 @@
 import React from "react";
 import ClaudeShannon from "../images/Claude.Shannon.png";
 import Brain from "../images/Brain.png";
+import "animate.css";
 
 const MainContent = () => {
   return (
