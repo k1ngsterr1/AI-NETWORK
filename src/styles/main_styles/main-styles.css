@@ -13,7 +13,7 @@ body {
 }
 body .app {
   width: 71.40625%;
-  height: 100vh;
+  height: 95vh;
   margin: auto;
 }
 body .navigation {
@@ -278,11 +278,39 @@ body .square {
     transform: scale3d(1, 1, 1);
   }
 }
-@media screen and (max-width: 1273px) {
+@media screen and (max-width: 1660px) {
+  .app {
+    height: 78vh !important;
+  }
+}
+@media screen and (max-width: 1273px) and (min-width: 780px) {
   body {
     background-image: url(/src/images/BG1024PX.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
     background-repeat: no-repeat;
     height: 400vh;
     font-family: "Roboto Condensed", sans-serif;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .app {
+    height: 60vh !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app {
+    height: 85vh !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    font-size: 13px !important;
+  }
+  .user-icon {
+    font-size: 12px !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .app {
+    height: 58vh !important;
   }
 }/*# sourceMappingURL=main-styles.css.map */

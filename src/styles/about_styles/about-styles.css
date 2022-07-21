@@ -24,7 +24,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: clamp(40px, 2.6041666667vw, 70px);
+  font-size: clamp(30px, 2.6041666667vw, 70px);
   color: #ffffff;
   margin-top: clamp(50px, 5.2083333333vw, 300px);
   text-transform: uppercase;
@@ -32,6 +32,8 @@
 
 .separator-2 {
   width: clamp(200px, 26.7708333333vw, 600px);
+  background-color: #ffffff;
+  margin-top: clamp(14px, 1.7708333333vw, 54px);
   height: 2px;
 }
 
@@ -149,9 +151,26 @@
   font-style: normal;
   font-weight: 400;
   width: 77.0666666667%;
+  height: 195px;
   margin-top: clamp(7px, 0.8854166667vw, 27px);
   font-size: clamp(21px, 1.71875vw, 43px);
   text-align: center;
   color: #ffffff;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1640px) and (min-width: 780px) {
+  .cards-container {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cards-container {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .cards-container {
+    height: 270px;
+  }
 }/*# sourceMappingURL=about-styles.css.map */

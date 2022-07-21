@@ -25,13 +25,15 @@ $userHover: #7ce0ff
     font-style: normal
     font-weight: 500
     user-select: none
-    font-size: clamp(40px,2.6041666666666665vw,70px)
+    font-size: clamp(30px,2.6041666666666665vw,70px)
     color: $text
     margin-top: clamp(50px,5.208333333333333vw,300px)
     text-transform: uppercase
 
 .separator-2
     width: clamp(200px,26.770833333333332vw, 600px)
+    background-color: $text
+    margin-top: clamp(14px,1.7708333333333333vw, 54px)
     height: 2px
 
 .glass-div
@@ -129,6 +131,7 @@ $userHover: #7ce0ff
     font-style: normal
     font-weight: 400
     width: 77.06666666666666%
+    height: 195px
     margin-top: clamp(7px,0.8854166666666666vw, 27px)
     font-size: clamp(21px,1.71875vw, 43px)
     text-align: center
@@ -136,3 +139,15 @@ $userHover: #7ce0ff
     text-transform: capitalize
 
 // Breakpoints
+
+@media screen and ( max-width:1640px  ) and (min-width: 780px)
+    .cards-container
+        height: 290px
+
+@media screen and ( max-width: 1024px )
+    .cards-container
+        height: 260px
+
+@media screen and ( max-width: 780px  )
+    .cards-container
+        height: 270px
