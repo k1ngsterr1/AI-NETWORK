@@ -1,0 +1,122 @@
+.ThirdAppBody {
+  background-image: url(/src/images/BG-NET.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 200vh;
+}
+
+.third-screen {
+  width: 71.40625%;
+  height: 200vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-c-header {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: clamp(30px, 2.6041666667vw, 70px);
+  color: #ffffff;
+  margin-top: clamp(50px, 5.2083333333vw, 300px);
+  text-transform: uppercase;
+}
+
+.separator-cr {
+  width: clamp(314px, 26.7708333333vw, 614px);
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: clamp(22px, 1.7708333333vw, 44px);
+}
+
+.about-c-glass {
+  width: clamp(354px, 39.2708333333vw, 854px);
+  height: clamp(154px, 25.3125vw, 586px);
+  background: rgba(217, 217, 217, 0.06);
+  box-shadow: 0px 12px 65px rgba(0, 0, 0, 0.25), inset 8.57333px -8.57333px 8.57333px rgba(182, 182, 182, 0.32), inset -8.57333px 8.57333px 8.57333px rgba(255, 255, 255, 0.32);
+  -webkit-backdrop-filter: blur(37.7227px);
+          backdrop-filter: blur(37.7227px);
+  margin-top: clamp(14px, 1.7708333333vw, 54px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-c-p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  width: 80.9018567639%;
+  font-size: clamp(35px, 2.34375vw, 55px);
+  line-height: 53px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: clamp(20px, 1.5625vw, 50px);
+  color: #FFFFFF;
+}
+
+.ruslan {
+  color: #24CFFF;
+  text-decoration: underline;
+}
+
+.social-networks {
+  width: 47.4801061008%;
+  height: 13.5802469136%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: clamp(15px, 1.8229166667vw, 50px);
+}
+
+.separator-cr-2 {
+  width: clamp(212px, 21.4583333333vw, 512px);
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: clamp(30px, 2.0833333333vw, 50px);
+}
+
+.contact-me-btn {
+  width: 53.3156498674%;
+  height: 15.0205761317%;
+  margin-top: clamp(30px, 2.0833333333vw, 50px);
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(25px, 2.34375vw, 65px);
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  transition: 0.3s all;
+}
+.contact-me-btn:hover {
+  border: none;
+  background-color: #00cffd;
+  box-shadow: 0px 4px 31px 5px rgba(0, 207, 253, 0.9);
+}
+
+.icon-sn-1, .icon-sn-2, .icon-sn-3 {
+  font-size: clamp(33px, 3.0375vw, 77px);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.icon-sn-1:hover {
+  color: #C4F4FF;
+}
+
+.icon-sn-2:hover {
+  color: #5865F2;
+}
+
+.icon-sn-3:hover {
+  color: #1769ff;
+}/*# sourceMappingURL=aboutC.css.map */
