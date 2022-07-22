@@ -61,6 +61,9 @@ $userHover: #7ce0ff
 .ruslan
     color: $blueForText
     text-decoration: underline
+    transition: 0.3s all
+    &:hover
+        color: $btnHover
 
 .social-networks
     width: 47.48010610079576%
@@ -97,6 +100,7 @@ $userHover: #7ce0ff
 .icon-sn-1 , .icon-sn-2, .icon-sn-3
     font-size: clamp(33px,3.0375vw,77px)
     cursor: pointer
+    color: $text
     transition: 0.3s all
 
 .icon-sn-1:hover
@@ -107,3 +111,84 @@ $userHover: #7ce0ff
 
 .icon-sn-3:hover
     color: #1769ff
+
+.neuro-hand-in
+    position: absolute
+    width: clamp(500px,58.333333333333336vw, 1220px)
+    height: clamp(700px,67.70833333333333vw, 1400px)
+    left: clamp(400px,40.520833333333336vw,900px)
+    user-select: none
+    pointer-events: none
+    top: clamp(1000px ,126.61458333333333vw, 2631px)
+    -webkit-animation-name: slideInRight
+    animation-name: slideInRight
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+
+.neuro-hand
+    position: absolute
+    width: clamp(500px,58.333333333333336vw, 1220px)
+    height: clamp(700px,67.70833333333333vw, 1400px)
+    left: clamp(400px,40.520833333333336vw,900px)
+    user-select: none
+    pointer-events: none
+    display: none
+
+.neuro-hand-out
+    position: absolute
+    width: clamp(500px,58.333333333333336vw, 1220px)
+    height: clamp(700px,67.70833333333333vw, 1400px)
+    left: clamp(400px,40.520833333333336vw,900px)
+    user-select: none
+    pointer-events: none
+    top: clamp(1000px ,126.61458333333333vw, 2631px)
+    -webkit-animation-name: slideOutRight
+    animation-name: slideOutRight
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+
+@-webkit-keyframes slideInRight
+  0% 
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+    visibility: visible
+
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+@keyframes slideInRight
+    0%
+        -webkit-transform: translateX(100%)
+        transform: translateX(100%)
+        visibility: visible
+
+    100%
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+
+// Slide out right
+
+@-webkit-keyframes slideOutRight
+  0% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+  100% 
+    visibility: hidden
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+
+@keyframes slideOutRight
+    0%
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+
+    100%
+        visibility: hidden
+        -webkit-transform: translateX(100%)
+        transform: translateX(100%)

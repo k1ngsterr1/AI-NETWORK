@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   height: 600vh;
   font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
 }
 body .app {
   width: 71.40625%;
@@ -226,7 +227,6 @@ body .square {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
@@ -298,7 +298,7 @@ body .square {
 }
 @media screen and (max-width: 1024px) {
   .app {
-    height: 85vh !important;
+    height: 70vh !important;
   }
 }
 @media screen and (max-width: 768px) {

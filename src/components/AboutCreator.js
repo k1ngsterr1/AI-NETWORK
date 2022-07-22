@@ -3,8 +3,14 @@ import "../styles/aboutC_styles/aboutC.css";
 import { FaGithub } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import NeuroHand3 from "../images/NEURO-HAND3.png";
+import { useState } from "react";
 
 const AboutCreator = () => {
+  const [neuroHandClass, setNeuroHandClass] = useState("neuro-hand");
+  let initialTxt = "CONTACT ME";
+  const [text, setText] = React.useState(initialTxt);
+
   return (
     <div className="third-screen">
       <h2 className="about-c-header">ABOUT CREATOR</h2>
@@ -21,10 +27,27 @@ const AboutCreator = () => {
           <FaBehance className="icon-sn-3"></FaBehance>
         </div>
         <figure className="separator-cr-2"></figure>
-        <button className="contact-me-btn">CONTACT ME</button>
+        <button
+          onMouseOver={() => {
+            setNeuroHandClass("neuro-hand-in");
+            setText("DO IT!");
+          }}
+          onMouseLeave={() => {
+            setNeuroHandClass("neuro-hand-out");
+            setText(initialTxt);
+          }}
+          id="contact-me-btn"
+          className="contact-me-btn"
+        >
+          {text}
+        </button>
       </div>
+      <img
+        id="neuro-hand-pic"
+        className={neuroHandClass}
+        src={NeuroHand3}
+      ></img>
     </div>
   );
 };
-
 export default AboutCreator;
