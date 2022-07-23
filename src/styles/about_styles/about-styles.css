@@ -164,6 +164,11 @@
     height: 290px;
   }
 }
+@media screen and (max-width: 1060px) {
+  .cards-container {
+    height: 245px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .cards-container {
     height: 260px;
@@ -172,5 +177,8 @@
 @media screen and (max-width: 780px) {
   .cards-container {
     height: 270px;
+  }
+  .secondAppBody {
+    height: 100vh;
   }
 }/*# sourceMappingURL=about-styles.css.map */

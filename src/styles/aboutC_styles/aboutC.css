@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 }
 
 .third-screen {
@@ -30,15 +30,15 @@
 }
 
 .separator-cr {
-  width: clamp(314px, 26.7708333333vw, 614px);
-  height: 2px;
+  width: clamp(200px, 26.7708333333vw, 600px);
   background-color: #ffffff;
-  margin-top: clamp(22px, 1.7708333333vw, 44px);
+  margin-top: clamp(14px, 1.7708333333vw, 54px);
+  height: 2px;
 }
 
 .about-c-glass {
   width: clamp(354px, 39.2708333333vw, 854px);
-  height: clamp(154px, 25.3125vw, 586px);
+  height: clamp(305px, 25.3125vw, 586px);
   background: rgba(217, 217, 217, 0.06);
   box-shadow: 0px 12px 65px rgba(0, 0, 0, 0.25), inset 8.57333px -8.57333px 8.57333px rgba(182, 182, 182, 0.32), inset -8.57333px 8.57333px 8.57333px rgba(255, 255, 255, 0.32);
   -webkit-backdrop-filter: blur(37.7227px);
@@ -54,8 +54,8 @@
   font-style: normal;
   font-weight: 400;
   width: 80.9018567639%;
-  font-size: clamp(35px, 2.34375vw, 55px);
-  line-height: 53px;
+  font-size: clamp(23px, 2.34375vw, 65px);
+  line-height: clamp(33px, 2.7604166667vw, 73px);
   text-align: center;
   text-transform: capitalize;
   margin-top: clamp(20px, 1.5625vw, 50px);
@@ -76,20 +76,20 @@
   height: 13.5802469136%;
   display: flex;
   justify-content: space-between;
-  margin-top: clamp(15px, 1.8229166667vw, 50px);
+  margin-top: clamp(25px, 1.8229166667vw, 50px);
 }
 
 .separator-cr-2 {
   width: clamp(212px, 21.4583333333vw, 512px);
   height: 2px;
   background-color: #ffffff;
-  margin-top: clamp(30px, 2.0833333333vw, 50px);
+  margin-top: clamp(15px, 2.0833333333vw, 50px);
 }
 
 .contact-me-btn {
-  width: 53.3156498674%;
-  height: 15.0205761317%;
-  margin-top: clamp(30px, 2.0833333333vw, 50px);
+  width: clamp(218px, 20.9375vw, 518px);
+  height: clamp(40px, 3.8020833333vw, 80px);
+  margin-top: clamp(10px, 2.0833333333vw, 50px);
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
@@ -211,5 +211,122 @@
   100% {
     visibility: hidden;
     transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .neuro-hand-pic {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 410px;
+    top: 1680px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    display: none;
+  }
+  .neuro-hand-in {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 410px;
+    top: 1680px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .neuro-hand-out {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 410px;
+    top: 1680px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .ThirdAppBody {
+    margin-top: -70px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about-c-glass {
+    height: 330px !important;
+  }
+  .separator-cr-2 {
+    margin-top: 10px;
+  }
+  .contact-me-btn {
+    margin-top: 25px;
+  }
+  .ThirdAppBody {
+    margin-top: -50px;
+  }
+  .neuro-hand-pic {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 295px;
+    top: 1560px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    display: none;
+  }
+  .neuro-hand-in {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 295px;
+    top: 1560px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .neuro-hand-out {
+    position: absolute;
+    width: clamp(500px, 58.3333333333vw, 1220px);
+    height: clamp(700px, 67.7083333333vw, 1400px);
+    left: 295px;
+    top: 1560px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 }/*# sourceMappingURL=aboutC.css.map */
