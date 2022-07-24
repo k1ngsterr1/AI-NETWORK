@@ -14,6 +14,7 @@ import "./fonts/roboto-condensed/RobotoCondensed-Regular.ttf";
 import App from "./App";
 import SecondApp from "./SecondApp";
 import ThirdApp from "./ThirdApp";
+import FourthApp from "./FourthApp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,5 +22,6 @@ root.render(
     <App />
     <SecondApp />
     <ThirdApp></ThirdApp>
+    <FourthApp></FourthApp>
   </React.StrictMode>
 );
