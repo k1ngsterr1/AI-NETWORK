@@ -13,16 +13,23 @@ $userHover: #7ce0ff
     padding: 0
     box-sizing: border-box
 
+::-webkit-scrollbar
+    display: none
+
 body
     background-image: url(/src/images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
     background-repeat: no-repeat
-    height: 600vh
+    height: auto
     font-family: 'Roboto Condensed', sans-serif
     overflow-x: hidden
+    scroll-behavior: hidden
+
+#root
+    height: 100%
 
     .app
         width: 71.40625%
-        height: 95vh
+        height: auto
         margin: auto
 
     .navigation
@@ -30,7 +37,7 @@ body
         font-family: 'Roboto Condensed'
         font-style: normal
         font-weight: 400
-        height: 35px
+        height: auto
         color: $text
         display: flex
         margin: auto
@@ -264,38 +271,3 @@ body
     100%
         -webkit-transform: scale3d(1, 1, 1)
         transform: scale3d(1, 1, 1)
-
-@media screen and (max-width:1660px)
-    .app
-        height: 78vh !important
-
-@media screen and (max-width:1273px) and (min-width: 780px)
-    body
-        background-image: url(/src/images/BG1024PX.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%)
-        background-repeat: no-repeat
-        height: 400vh
-        font-family: 'Roboto Condensed', sans-serif
-
-@media screen and ( max-width: 1260px  )
-    .app
-        height: 60vh !important
-
-@media screen and ( max-width:1025px )
-    .app
-        height: 90vh !important
-
-@media screen and ( max-width:1024px  )
-    .app
-        height: 45vh !important
-
-@media screen and (max-width:768px)
-    .navigation
-        font-size: 13px !important
-
-    .user-icon
-        font-size: 12px !important
-        width: 12px !important
-        height: 12px !important
-
-    .app
-        height: 58vh !important

@@ -5,24 +5,33 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-image: url(/src/images/BG-MAIN.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
   background-repeat: no-repeat;
-  height: 600vh;
+  height: auto;
   font-family: "Roboto Condensed", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: hidden;
 }
-body .app {
+
+#root {
+  height: 100%;
+}
+#root .app {
   width: 71.40625%;
-  height: 95vh;
+  height: auto;
   margin: auto;
 }
-body .navigation {
+#root .navigation {
   width: 100%;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  height: 35px;
+  height: auto;
   color: #ffffff;
   display: flex;
   margin: auto;
@@ -35,38 +44,38 @@ body .navigation {
       -ms-user-select: none;
           user-select: none;
 }
-body a {
+#root a {
   cursor: pointer;
 }
-body .home {
+#root .home {
   text-decoration: underline;
 }
-body .home:hover, body .about-project:hover, body .about-creator:hover, body .faq:hover, body .support:hover {
+#root .home:hover, #root .about-project:hover, #root .about-creator:hover, #root .faq:hover, #root .support:hover {
   text-decoration: underline;
 }
-body .user-container {
+#root .user-container {
   display: flex;
   align-items: center;
 }
-body .user {
+#root .user {
   transition: 0.3s all;
 }
-body .user:hover {
+#root .user:hover {
   text-decoration: underline;
   color: #7ce0ff;
 }
-body .user-icon {
+#root .user-icon {
   font-size: clamp(7px, 1.40625vw, 37px);
   width: clamp(17px, 1.40625vw, 37px);
   height: clamp(17px, 1.40625vw, 37px);
   margin-right: clamp(7px, 1.09375vw, 31px);
 }
-body .main {
+#root .main {
   width: clamp(480px, 78.4405543399%, 1200px);
   height: clamp(480px, 37.2916666667vw, 817px);
   margin-top: clamp(10px, 3.6354166667vw, 90px);
 }
-body .square {
+#root .square {
   width: 8.1770833333vw;
   height: 8.1770833333vw;
   border: solid white;
@@ -276,46 +285,5 @@ body .square {
   }
   100% {
     transform: scale3d(1, 1, 1);
-  }
-}
-@media screen and (max-width: 1660px) {
-  .app {
-    height: 78vh !important;
-  }
-}
-@media screen and (max-width: 1273px) and (min-width: 780px) {
-  body {
-    background-image: url(/src/images/BG1024PX.png), linear-gradient(287.56deg, #30CFD0 0%, #330867 100%);
-    background-repeat: no-repeat;
-    height: 400vh;
-    font-family: "Roboto Condensed", sans-serif;
-  }
-}
-@media screen and (max-width: 1260px) {
-  .app {
-    height: 60vh !important;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .app {
-    height: 90vh !important;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .app {
-    height: 45vh !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .navigation {
-    font-size: 13px !important;
-  }
-  .user-icon {
-    font-size: 12px !important;
-    width: 12px !important;
-    height: 12px !important;
-  }
-  .app {
-    height: 58vh !important;
   }
 }/*# sourceMappingURL=main-styles.css.map */
