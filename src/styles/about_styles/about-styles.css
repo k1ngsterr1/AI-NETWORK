@@ -160,14 +160,49 @@
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 1930px) {
+@media screen and (max-width: 2570px) {
+  .glass-div {
+    width: 950px;
+    height: 620px;
+  }
   .cards-container {
-    height: 305px;
+    height: 490px;
+    border: 2px solid red;
   }
 }
-@media screen and (max-width: 1640px) and (min-width: 780px) {
+@media screen and (max-width: 2058px) {
+  .glass-div {
+    width: 500px;
+    height: 225px;
+  }
+}
+@media screen and (max-width: 1930px) {
   .cards-container {
-    height: 290px;
+    height: 335px;
+    border: 2px solid orange;
+  }
+  .glass-div {
+    width: 760px;
+    height: 425px;
+  }
+}
+@media screen and (max-width: 1910px) {
+  .cards-container {
+    height: 305px;
+    border: 2px solid yellow;
+  }
+}
+@media screen and (max-width: 1640px) {
+  .cards-container {
+    height: 300px;
+    border: 2px solid green;
+  }
+  .glass-div {
+    width: 600px;
+    height: 380px;
+  }
+  .about-us-paragraph {
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 1536px) {
@@ -178,34 +213,57 @@
     width: 420px;
   }
   .cards-container {
-    height: 255px !important;
+    height: 235px;
+    border: 2px solid lightblue;
   }
   .cards-container .card-one-text, .cards-container .card-two-text, .cards-container .card-three-text {
     font-size: 21px;
   }
 }
+@media screen and (max-width: 1440px) {
+  .glass-div {
+    width: 520px;
+    height: 320px;
+    border: 2px solid blue;
+  }
+  .about-us-paragraph {
+    font-size: 31px;
+  }
+  .card-one-text, .card-two-text, .card-three-text {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 1376px) {
   .card-one-text, .card-two-text, .card-three-text {
-    font-size: 24.5px;
+    font-size: 24px;
+  }
+  .glass-div {
+    width: 520px;
+    height: 270px;
+  }
+  .about-us-paragraph {
+    font-size: 29px;
   }
 }
 @media screen and (max-width: 1290px) {
   .cards-container {
-    height: 270px !important;
+    height: 270px;
+    border: 2px solid black;
   }
 }
 @media screen and (max-width: 1060px) {
   .cards-container {
     height: 245px;
+    border: 2px solid gold;
   }
 }
 @media screen and (max-width: 1024px) {
   .cards-container {
-    height: 260px;
+    height: 245px;
+    border: 2px solid magenta;
   }
-}
-@media screen and (max-width: 780px) {
-  .cards-container {
-    height: 270px;
+  .read-more {
+    width: 250px;
+    height: 45px;
   }
 }/*# sourceMappingURL=about-styles.css.map */

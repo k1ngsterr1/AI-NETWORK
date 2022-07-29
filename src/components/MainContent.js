@@ -37,7 +37,7 @@ const MainContent = () => {
       {/* Buttons */}
       <div className="buttons">
         <button className="start-btn">START</button>
-        <button className="sign-up">SIGN UP</button>
+        <button className="demo">SIGN UP</button>
       </div>
       <img className="brain-picture" src={Brain}></img>
     </main>
